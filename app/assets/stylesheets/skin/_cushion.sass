@@ -1,0 +1,47 @@
+/*  
+ *  _cushion.scss
+ *
+ *  This module contains a set of classes which provide spacing within an element.
+ *
+ *  @project Truss
+ *  @author Carlos Ramirez III, Ryan Jafari
+ *  @copyright 2011
+ */
+ 
+/*  The cushion base class implements modifier classes to optionally remove paddings. If you declare
+ *  project-specific cushions, you must @extend from this base class to have access to these modifiers
+ */
+
+.csn-base
+  &.no-top
+    padding-top: 0
+  &.no-bot
+    padding-bottom: 0
+  &.no-sides
+    padding:
+      left: 0
+      right: 0
+
+.csn-xs
+  @extend .csn-base
+  padding: 5px
+
+.csn-s
+  @extend .csn-base
+  padding: 10px
+
+.csn-m
+  @extend .csn-base
+  padding: 15px
+
+.csn-l
+  @extend .csn-base
+  padding: 20px
+
+.csn-xl
+  @extend .csn-base
+  padding: 25px
+
+.csn-xxl
+  @extend .csn-base
+  padding: 30px

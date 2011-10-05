@@ -57,7 +57,7 @@
 /*  
  *  _shift.scss
  *
- *  This module contains a set of classes useful for providing a bit of space between elements.
+ *  This module contains a set of classes which provide spacing between elements.
  *
  *  @project Truss
  *  @author Carlos Ramirez III, Ryan Jafari
@@ -98,3 +98,40 @@
 
 .shift-rgt-xxl {
   margin-left: 30px; }
+
+/*  _cushion.scss
+ *
+ *  This module contains a set of classes which provide spacing within an element.
+ *
+ *  @project Truss
+ *  @author Carlos Ramirez III, Ryan Jafari
+ *  @copyright 2011
+ */
+/*  The cushion base class implements modifier classes to optionally remove paddings. If you declare
+ *  project-specific cushions, you must @extend from this base class to have access to these modifiers
+ */
+.csn-base.no-top, .no-top.csn-xs, .no-top.csn-s, .no-top.csn-m, .no-top.csn-l, .no-top.csn-xl, .no-top.csn-xxl {
+  padding-top: 0; }
+.csn-base.no-bot, .no-bot.csn-xs, .no-bot.csn-s, .no-bot.csn-m, .no-bot.csn-l, .no-bot.csn-xl, .no-bot.csn-xxl {
+  padding-bottom: 0; }
+.csn-base.no-sides, .no-sides.csn-xs, .no-sides.csn-s, .no-sides.csn-m, .no-sides.csn-l, .no-sides.csn-xl, .no-sides.csn-xxl {
+  padding-left: 0;
+  padding-right: 0; }
+
+.csn-xs {
+  padding: 5px; }
+
+.csn-s {
+  padding: 10px; }
+
+.csn-m {
+  padding: 15px; }
+
+.csn-l {
+  padding: 20px; }
+
+.csn-xl {
+  padding: 25px; }
+
+.csn-xxl {
+  padding: 30px; }
