@@ -1,0 +1,35 @@
+/*  
+ *  _grid.sass
+ *
+ *  This is the framework's 'grid' module. It uses a simple, percent-based grid system with
+ *  multiples of 1/3s, 1/4s, and 1/5s.
+ *
+ *  The user must set the main grid's fixed-width manually, e.g.:
+ *
+ *  .main { margin: 0 auto; width: 960px; }
+ *
+ *  @project Truss
+ *  @author Carlos Ramirez III, Ryan Jafari
+ *  @copyright 2011
+ */
+
+.dp-base { float: left; }
+
+.dp20,
+.dp25,
+.dp33,
+.dp50,
+.dp66,
+.dp75,
+.dp100 { @extend .dp-base; }
+
+.dp20 { width: 20%; }
+.dp25 { width: 25%; }
+.dp33 { width: 33.33%; }
+.dp40 { width: 40%; }
+.dp50 { width: 50%; }
+.dp60 { width: 60%; }
+.dp66 { width: 66.66%; }
+.dp75 { width: 75%; }
+.dp80 { width: 80%; }
+.dp100 { width:100%; }
