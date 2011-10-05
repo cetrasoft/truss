@@ -12,10 +12,7 @@
  *  @author Carlos Ramirez III, Ryan Jafari
  *  @copyright 2011
  */
-
-.dp-base { float: left; }
-
-.dp20,
+.dp-base, .dp20,
 .dp25,
 .dp33,
 .dp40,
@@ -24,15 +21,35 @@
 .dp66,
 .dp75,
 .dp80,
-.dp100 { @extend .dp-base; }
+.dp100 {
+  float: left; }
 
-.dp20 { width: 20%; }
-.dp25 { width: 25%; }
-.dp33 { width: 33.33%; }
-.dp40 { width: 40%; }
-.dp50 { width: 50%; }
-.dp60 { width: 60%; }
-.dp66 { width: 66.66%; }
-.dp75 { width: 75%; }
-.dp80 { width: 80%; }
-.dp100 { width:100%; }
+.dp20 {
+  width: 20%; }
+
+.dp25 {
+  width: 25%; }
+
+.dp33 {
+  width: 33.33%; }
+
+.dp40 {
+  width: 40%; }
+
+.dp50 {
+  width: 50%; }
+
+.dp60 {
+  width: 60%; }
+
+.dp66 {
+  width: 66.66%; }
+
+.dp75 {
+  width: 75%; }
+
+.dp80 {
+  width: 80%; }
+
+.dp100 {
+  width: 100%; }
