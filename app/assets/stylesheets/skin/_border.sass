@@ -1,0 +1,44 @@
+/*  
+ *  _border.sass
+ *
+ *  This module facilitates adding borders around an element. Modifiers allow control over which
+ *  sides of the border are visible. It is the responsibility of consumer to specify the color of
+ *  the border, e.g.:
+ *
+ *  .error-box { @extend .bordered; border-color: red; }
+ *
+ *  @project Truss
+ *  @author Carlos Ramirez III, Ryan Jafari
+ *  @copyright 2011
+ */
+ 
+.bordered
+  border: 1px solid
+  &.no-top
+    border-top: 0
+  &.no-bot
+    border-bottom: 0
+  &.no-sides
+    border:
+      top: 0
+      bottom: 0
+  &.top-only
+    border:
+      left: 0
+      right: 0
+      bottom: 0
+  &.bot-only
+    border:
+      left: 0
+      top: 0
+      right: 0
+  &.lft-only
+    border:
+      top: 0
+      right: 0
+      bottom: 0
+  &.rgt-only
+    border:
+      left: 0
+      top: 0
+      bottom: 0

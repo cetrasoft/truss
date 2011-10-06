@@ -99,16 +99,19 @@
 .shf-rgt-xxl {
   margin-left: 30px; }
 
-/*  _cushion.scss
+/*  _cushion.sass
  *
- *  This module contains a set of classes which provide spacing within an element.
+ *  This module contains a set of classes which provide spacing within an element. These classes should
+ *  be used as base classes from which to inherit when constructing new skins, e.g.:
+ *
+ *  .call-out { @extend .csn-m; background: light-blue; ... etc. }
+ *
+ *  The cushion base class implements modifier classes to optionally remove paddings. If you declare
+ *  project-specific cushions, you must @extend from this base class to have access to these modifiers
  *
  *  @project Truss
  *  @author Carlos Ramirez III, Ryan Jafari
  *  @copyright 2011
- */
-/*  The cushion base class implements modifier classes to optionally remove paddings. If you declare
- *  project-specific cushions, you must @extend from this base class to have access to these modifiers
  */
 .csn-base.no-top, .no-top.csn-xs, .no-top.csn-s, .no-top.csn-m, .no-top.csn-l, .no-top.csn-xl, .no-top.csn-xxl {
   padding-top: 0; }
@@ -135,3 +138,41 @@
 
 .csn-xxl {
   padding: 30px; }
+
+/*  _border.sass
+ *
+ *  This module facilitates adding borders around an element. Modifiers allow control over which
+ *  sides of the border are visible. It is the responsibility of consumer to specify the color of
+ *  the border, e.g.:
+ *
+ *  .error-box { @extend .bordered; border-color: red; }
+ *
+ *  @project Truss
+ *  @author Carlos Ramirez III, Ryan Jafari
+ *  @copyright 2011
+ */
+.bordered {
+  border: 1px solid; }
+  .bordered.no-top {
+    border-top: 0; }
+  .bordered.no-bot {
+    border-bottom: 0; }
+  .bordered.no-sides {
+    border-top: 0;
+    border-bottom: 0; }
+  .bordered.top-only {
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0; }
+  .bordered.bot-only {
+    border-left: 0;
+    border-top: 0;
+    border-right: 0; }
+  .bordered.lft-only {
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 0; }
+  .bordered.rgt-only {
+    border-left: 0;
+    border-top: 0;
+    border-bottom: 0; }
