@@ -63,40 +63,40 @@
  *  @author Carlos Ramirez III, Ryan Jafari
  *  @copyright 2011
  */
-.shift-dwn-xs {
+.shf-dwn-xs {
   margin-top: 5px; }
 
-.shift-dwn-s {
+.shf-dwn-s {
   margin-top: 10px; }
 
-.shift-dwn-m {
+.shf-dwn-m {
   margin-top: 15px; }
 
-.shift-dwn-l {
+.shf-dwn-l {
   margin-top: 20px; }
 
-.shift-dwn-xl {
+.shf-dwn-xl {
   margin-top: 25px; }
 
-.shift-dwn-xxl {
+.shf-dwn-xxl {
   margin-top: 30px; }
 
-.shift-rgt-xs {
+.shf-rgt-xs {
   margin-left: 5px; }
 
-.shift-rgt-s {
+.shf-rgt-s {
   margin-left: 10px; }
 
-.shift-rgt-m {
+.shf-rgt-m {
   margin-left: 15px; }
 
-.shift-rgt-l {
+.shf-rgt-l {
   margin-left: 20px; }
 
-.shift-rgt-xl {
+.shf-rgt-xl {
   margin-left: 25px; }
 
-.shift-rgt-xxl {
+.shf-rgt-xxl {
   margin-left: 30px; }
 
 /*  _cushion.scss

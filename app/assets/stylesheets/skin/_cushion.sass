@@ -1,17 +1,19 @@
 /*  
- *  _cushion.scss
+ *  _cushion.sass
  *
- *  This module contains a set of classes which provide spacing within an element.
+ *  This module contains a set of classes which provide spacing within an element. These classes should
+ *  be used as base classes from which to inherit when constructing new skins, e.g.:
+ *
+ *  .call-out { @extend .csn-m; background: light-blue; ... etc. }
+ *
+ *  The cushion base class implements modifier classes to optionally remove paddings. If you declare
+ *  project-specific cushions, you must @extend from this base class to have access to these modifiers
  *
  *  @project Truss
  *  @author Carlos Ramirez III, Ryan Jafari
  *  @copyright 2011
  */
  
-/*  The cushion base class implements modifier classes to optionally remove paddings. If you declare
- *  project-specific cushions, you must @extend from this base class to have access to these modifiers
- */
-
 .csn-base
   &.no-top
     padding-top: 0
