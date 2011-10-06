@@ -32,3 +32,15 @@ $media-spacing: 5px !default
   .left, .right
     img
       vertical-align: middle
+
+/* This media element is vertically aligned to the top */
+.media.top
+  +box-align(start)
+  
+/* This media element is vertically aligned to the bottom */
+.media.bottom
+  +box-align(end)
+  
+/* This media element is vertically aligned to the baseline */
+.media.baseline
+  +box-align(baseline)

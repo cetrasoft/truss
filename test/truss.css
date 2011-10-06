@@ -210,3 +210,21 @@
     margin-left: 5px; }
   .media .left img, .media .right img {
     vertical-align: middle; }
+
+/* This media element is vertically aligned to the top */
+.media.top {
+  -webkit-box-align: start;
+  -moz-box-align: start;
+  box-align: start; }
+
+/* This media element is vertically aligned to the bottom */
+.media.bottom {
+  -webkit-box-align: end;
+  -moz-box-align: end;
+  box-align: end; }
+
+/* This media element is vertically aligned to the baseline */
+.media.baseline {
+  -webkit-box-align: baseline;
+  -moz-box-align: baseline;
+  box-align: baseline; }
