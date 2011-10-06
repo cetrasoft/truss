@@ -1,0 +1,34 @@
+@import "../lib/flex-box"
+
+/*  
+ *  _media.sass
+ *
+ *  This module houses the 'media' component. A media object consists of some element (image, icon, text, link, etc.)
+ *  adjacent to another element. A vertical alignment between the two elements can be easily specified and additional
+ *  elements based on the media object can be used to create horizontal spacing between elements.
+ *
+ *  @project Truss
+ *  @author Carlos Ramirez III, Ryan Jafari
+ *  @copyright 2011
+ */
+ 
+$media-spacing: 5px !default
+
+/*
+ *  The media element uses Flexbox display by default. The elements will flow horizontally and are
+ *  vertically aligned to the center by default.
+ */
+.media
+  +display-box
+  +box-orient(horizontal)
+  +box-align(center)
+  // The elements will have a default spacing between them
+  .left, .right
+    &:first-child
+      margin-right: $media-spacing
+    &:last-child
+      margin-left: $media-spacing
+  // Gets rid of mysterious spacing below images
+  .left, .right
+    img
+      vertical-align: middle

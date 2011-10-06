@@ -176,3 +176,37 @@
     border-left: 0;
     border-top: 0;
     border-bottom: 0; }
+
+/*
+ *  This module was borrowed from the amazing 'Bourbon' gem by Thoughtbot
+ *  https://github.com/thoughtbot/bourbon
+ */
+/*  _media.sass
+ *
+ *  This module houses the 'media' component. A media object consists of some element (image, icon, text, link, etc.)
+ *  adjacent to another element. A vertical alignment between the two elements can be easily specified and additional
+ *  elements based on the media object can be used to create horizontal spacing between elements.
+ *
+ *  @project Truss
+ *  @author Carlos Ramirez III, Ryan Jafari
+ *  @copyright 2011
+ */
+/*  The media element uses Flexbox display by default. The elements will flow horizontally and are
+ *  vertically aligned to the center by default.
+ */
+.media {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center; }
+  .media .left:first-child, .media .right:first-child {
+    margin-right: 5px; }
+  .media .left:last-child, .media .right:last-child {
+    margin-left: 5px; }
+  .media .left img, .media .right img {
+    vertical-align: middle; }
