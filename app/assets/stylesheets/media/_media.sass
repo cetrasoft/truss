@@ -1,6 +1,7 @@
 @import "../lib/flex-box"
+@import "../lib/box-sizing"
 
-/*  
+/*
  *  _media.sass
  *
  *  This module houses the 'media' component. A media object consists of some element (image, icon, text, link, etc.)
@@ -23,11 +24,10 @@ $media-spacing: 5px !default
   +box-orient(horizontal)
   +box-align(center)
   // The elements will have a default spacing between them
-  .left, .right
-    &:first-child
-      margin-right: $media-spacing
-    &:last-child
-      margin-left: $media-spacing
+  .left
+    margin-right: $media-spacing
+  .right
+    margin-left: $media-spacing
     // Gets rid of mysterious spacing below images
     img
       vertical-align: middle
@@ -50,10 +50,24 @@ $media-spacing: 5px !default
 .media.gap
   // NOTE: firefox flex-box doesn't work without this!
   width: 100%
-  & > .right:last-child
+  & > .right
     +box-flex(1)
     text-align: right
     // If the right-aligned element isn't text (e.g.: another media, a list, etc.), then you must wrap it
     & > .wrap
       float: right
-      
+
+/*
+ *  The 'dual' media element floats the left and right elements to either side of the container in addition
+ *  to having an element which appears centered in the space between.
+ */
+.media.dual
+  // NOTE: firefox flex-box doesn't work without this!
+  // NOTE 2: in order to get the media to respect parent's padding, we need
+  // to set the box-sizing property
+  // TODO: why does .gap respect the padding, but .dual doesn't?
+  width: 100%
+  +box-sizing(border-box)
+  .center
+    +box-flex(1)
+    text-align: center
