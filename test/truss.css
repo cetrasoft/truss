@@ -208,12 +208,12 @@
   -webkit-box-align: center;
   -moz-box-align: center;
   box-align: center; }
-  .media .left:first-child, .media .right:first-child {
+  .media .left {
     margin-right: 5px; }
-  .media .left:last-child, .media .right:last-child {
+  .media .right {
     margin-left: 5px; }
-  .media .left img, .media .right img {
-    vertical-align: middle; }
+    .media .right img {
+      vertical-align: middle; }
 
 /* This media element is vertically aligned to the top */
 .media.top {
@@ -237,12 +237,12 @@
  */
 .media.gap {
   width: 100%; }
-  .media.gap > .right:last-child {
+  .media.gap > .right {
     -webkit-box-flex: 1;
     -moz-box-flex: 1;
     box-flex: 1;
     text-align: right; }
-    .media.gap > .right:last-child > .wrap {
+    .media.gap > .right > .wrap {
       float: right; }
 
 /*  The 'dual' media element floats the left and right elements to either side of the container in addition
@@ -260,3 +260,36 @@
     -moz-box-flex: 1;
     box-flex: 1;
     text-align: center; }
+
+/*
+ *  This module was borrowed from the amazing 'Bourbon' gem by Thoughtbot
+ *  https://github.com/thoughtbot/bourbon
+ */
+/*  _list.sass
+ *
+ *  This module is used for creating lists.
+ *
+ *  @project Truss
+ *  @author Carlos Ramirez III, Ryan Jafari
+ *  @copyright 2011
+ */
+/*  This is a basic list of horizontal items. Flexbox layout is used to arrange the items
+ *  horizontally and vertically align them to the center.
+ */
+ul.horizontal {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center; }
+  ul.horizontal li:not(:first-child) {
+    margin-left: 5px; }
+  ul.horizontal li:not(:last-child) {
+    margin-right: 5px; }

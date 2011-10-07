@@ -1,0 +1,32 @@
+@import "../lib/flex-box"
+
+/*
+ *  _list.sass
+ *
+ *  This module is used for creating lists.
+ *
+ *  @project Truss
+ *  @author Carlos Ramirez III, Ryan Jafari
+ *  @copyright 2011
+ */
+ 
+$list-spacing: 5px !default
+
+/*
+ *  This is a basic list of horizontal items. Flexbox layout is used to arrange the items
+ *  horizontally and vertically align them to the center.
+ */
+ul.horizontal
+  list-style: none
+  // NOTE: setting this here means a consumer would have to use !important if they wanted padding or margin; but maybe
+  // they should be adding that to a surrounding container instead?
+  padding: 0
+  margin: 0
+  +display-box
+  +box-orient(horizontal)
+  +box-align(center)
+  li
+    &:not(:first-child)
+      margin-left: $list-spacing
+    &:not(:last-child)
+      margin-right: $list-spacing
