@@ -43,3 +43,17 @@ $media-spacing: 5px !default
 /* This media element is vertically aligned to the baseline */
 .media.baseline
   +box-align(baseline)
+  
+/*
+ *  The 'gap' media element floats the left and right elements to either side of the container.
+ */
+.media.gap
+  // NOTE: firefox flex-box doesn't work without this!
+  width: 100%
+  & > .right:last-child
+    +box-flex(1)
+    text-align: right
+    // If the right-aligned element isn't text (e.g.: another media, a list, etc.), then you must wrap it
+    & > .wrap
+      float: right
+      

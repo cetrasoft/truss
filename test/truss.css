@@ -228,3 +228,15 @@
   -webkit-box-align: baseline;
   -moz-box-align: baseline;
   box-align: baseline; }
+
+/*  The 'gap' media element floats the left and right elements to either side of the container.
+ */
+.media.gap {
+  width: 100%; }
+  .media.gap > .right:last-child {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    box-flex: 1;
+    text-align: right; }
+    .media.gap > .right:last-child > .wrap {
+      float: right; }
