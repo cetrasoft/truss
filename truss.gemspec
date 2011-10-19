@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Carlos Ramirez III", "Ryan Jafari"]
   s.email       = ["carlos@cetrasoft.com", "ryan@cetrasoft.com"]
-  s.homepage    = ""
+  s.homepage    = "https://github.com/cetrasoft/truss"
   s.summary     = %q{A front-end framework built using the principles of OOCSS}
   s.description = %q{Truss is a framework inspired by the philosophy of Nicole Sullivan's Object-Oriented CSS.}
 
