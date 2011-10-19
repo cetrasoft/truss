@@ -24,12 +24,12 @@ $media-spacing: 5px !default
   +box-orient(horizontal)
   +box-align(center)
   // The elements will have a default spacing between them
-  .left
+  & > .left
     margin-right: $media-spacing
-  .right
+  & > .right
     margin-left: $media-spacing
     // Gets rid of mysterious spacing below images
-    img
+    & > img
       vertical-align: middle
 
 /* This media element is vertically aligned to the top */
@@ -68,6 +68,6 @@ $media-spacing: 5px !default
   // TODO: why does .gap respect the padding, but .dual doesn't?
   width: 100%
   +box-sizing(border-box)
-  .center
+  & > .center
     +box-flex(1)
     text-align: center

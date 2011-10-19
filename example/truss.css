@@ -208,11 +208,11 @@
   -webkit-box-align: center;
   -moz-box-align: center;
   box-align: center; }
-  .media .left {
+  .media > .left {
     margin-right: 5px; }
-  .media .right {
+  .media > .right {
     margin-left: 5px; }
-    .media .right img {
+    .media > .right > img {
       vertical-align: middle; }
 
 /* This media element is vertically aligned to the top */
@@ -255,7 +255,7 @@
   -ms-box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box; }
-  .media.dual .center {
+  .media.dual > .center {
     -webkit-box-flex: 1;
     -moz-box-flex: 1;
     box-flex: 1;
