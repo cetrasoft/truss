@@ -1,3 +1,50 @@
+/*  _font.sass
+ *
+ *  This module contains classes for setting font sizes for text and headers. The
+ *  header classes are used so that a header element does not need to be restricted
+ *  to a default font-size, especially since those defaults are usually reset. 
+ *
+ *  @project Truss
+ *  @author Carlos Ramirez III, Ryan Jafari
+ *  @copyright 2011
+ */
+/* Sometimes you want to set a different font-weight for bold text */
+/*  Fonts
+ *
+ *  xx-sm  9x
+ *  x-sm   10px
+ *  sm     13px
+ *  med    16px
+ *  lg     18px
+ *  x-lg   24px
+ *  xx-lg  32px
+ */
+.xx-sm {
+  font-size: xx-small; }
+
+.x-sm, .h6 {
+  font-size: x-small; }
+
+.sm, .h5 {
+  font-size: small; }
+
+.med, .h4 {
+  font-size: medium; }
+
+.lg, .h3 {
+  font-size: large; }
+
+.x-lg, .h2 {
+  font-size: x-large; }
+
+.xx-lg, .h1 {
+  font-size: xx-large; }
+
+/*  Headers
+ */
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: bold; }
+
 /*  
  *  _grid.scss
  *
@@ -289,7 +336,7 @@ ul.horizontal {
   -webkit-box-align: center;
   -moz-box-align: center;
   box-align: center; }
-  ul.horizontal li:not(:first-child) {
+  ul.horizontal > li:not(:first-child) {
     margin-left: 5px; }
-  ul.horizontal li:not(:last-child) {
+  ul.horizontal > li:not(:last-child) {
     margin-right: 5px; }

@@ -1,0 +1,72 @@
+/*  
+ *  _font.sass
+ *
+ *  This module contains classes for setting font sizes for text and headers. The
+ *  header classes are used so that a header element does not need to be restricted
+ *  to a default font-size, especially since those defaults are usually reset. 
+ *
+ *  @project Truss
+ *  @author Carlos Ramirez III, Ryan Jafari
+ *  @copyright 2011
+ */
+
+/* Sometimes you want to set a different font-weight for bold text */
+$bold: bold !default
+
+/*
+ *  Fonts
+ *
+ *  xx-sm  9x
+ *  x-sm   10px
+ *  sm     13px
+ *  med    16px
+ *  lg     18px
+ *  x-lg   24px
+ *  xx-lg  32px
+ */
+
+.xx-sm
+  font-size: xx-small
+  
+.x-sm
+  font-size: x-small
+  
+.sm
+  font-size: small
+  
+.med
+  font-size: medium
+  
+.lg
+  font-size: large
+  
+.x-lg
+  font-size: x-large
+  
+.xx-lg
+  font-size: xx-large
+  
+/*
+ *  Headers
+ */
+  
+.h1, .h2, .h3, .h4, .h5, .h6
+  font-weight: $bold
+  
+.h1
+  @extend .xx-lg
+
+.h2
+  @extend .x-lg
+
+.h3
+  @extend .lg
+
+.h4
+  @extend .med
+
+.h5
+  @extend .sm
+
+.h6
+  @extend .x-sm
