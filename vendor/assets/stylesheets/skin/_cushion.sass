@@ -6,15 +6,15 @@
  *
  *  .call-out { @extend .csn-m; background: light-blue; ... etc. }
  *
- *  The cushion base class implements modifier classes to optionally remove paddings. If you declare
- *  project-specific cushions, you must @extend from this base class to have access to these modifiers
+ *  Each cushion class has modifier classes available to optionally remove paddings. If you declare
+ *  project-specific cushions, you can use the 'csn-modifiers' mixin to gain access to them.
  *
  *  @project Truss
  *  @author Carlos Ramirez III, Ryan Jafari
  *  @copyright 2011
  */
  
-.csn-base
+=csn-modifiers
   &.no-top
     padding-top: 0
   &.no-bot
@@ -25,25 +25,25 @@
       right: 0
 
 .csn-xs
-  @extend .csn-base
+  +csn-modifiers
   padding: 5px
 
 .csn-s
-  @extend .csn-base
+  +csn-modifiers
   padding: 10px
 
 .csn-m
-  @extend .csn-base
+  +csn-modifiers
   padding: 15px
 
 .csn-l
-  @extend .csn-base
+  +csn-modifiers
   padding: 20px
 
 .csn-xl
-  @extend .csn-base
+  +csn-modifiers
   padding: 25px
 
 .csn-xxl
-  @extend .csn-base
+  +csn-modifiers
   padding: 30px
