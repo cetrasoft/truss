@@ -1,0 +1,25 @@
+/*
+ *  _list_fallback.sass
+ *
+ *  This file contains fallback styling for the 'list' module. For non-flexbox browsers, floating will
+ *  be used.
+ *
+ *  NOTE: This fallback module relies on browser feature detection provided by head.js or modernizr.js
+ *
+ *  http://headjs.com/
+ *  http://www.modernizr.com/
+ *  
+ *  @project Truss
+ *  @author Carlos Ramirez III, Ryan Jafari
+ *  @copyright 2011
+ */
+
+ ul.horizontal
+  .no-flexbox &
+    overflow: auto
+    .media
+      display: block
+    li
+      float: left
+      a
+        float: left
