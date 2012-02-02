@@ -153,38 +153,72 @@
  *
  *  .call-out { @extend .csn-m; background: light-blue; ... etc. }
  *
- *  The cushion base class implements modifier classes to optionally remove paddings. If you declare
- *  project-specific cushions, you must @extend from this base class to have access to these modifiers
+ *  Each cushion class has modifier classes available to optionally remove paddings. If you declare
+ *  project-specific cushions, you can use the 'csn-modifiers' mixin to gain access to them.
  *
  *  @project Truss
  *  @author Carlos Ramirez III, Ryan Jafari
  *  @copyright 2011
  */
-.csn-base.no-top, .no-top.csn-xs, .no-top.csn-s, .no-top.csn-m, .no-top.csn-l, .no-top.csn-xl, .no-top.csn-xxl {
-  padding-top: 0; }
-.csn-base.no-bot, .no-bot.csn-xs, .no-bot.csn-s, .no-bot.csn-m, .no-bot.csn-l, .no-bot.csn-xl, .no-bot.csn-xxl {
-  padding-bottom: 0; }
-.csn-base.no-sides, .no-sides.csn-xs, .no-sides.csn-s, .no-sides.csn-m, .no-sides.csn-l, .no-sides.csn-xl, .no-sides.csn-xxl {
-  padding-left: 0;
-  padding-right: 0; }
-
 .csn-xs {
   padding: 5px; }
+  .csn-xs.no-top {
+    padding-top: 0; }
+  .csn-xs.no-bot {
+    padding-bottom: 0; }
+  .csn-xs.no-sides {
+    padding-left: 0;
+    padding-right: 0; }
 
 .csn-s {
   padding: 10px; }
+  .csn-s.no-top {
+    padding-top: 0; }
+  .csn-s.no-bot {
+    padding-bottom: 0; }
+  .csn-s.no-sides {
+    padding-left: 0;
+    padding-right: 0; }
 
 .csn-m {
   padding: 15px; }
+  .csn-m.no-top {
+    padding-top: 0; }
+  .csn-m.no-bot {
+    padding-bottom: 0; }
+  .csn-m.no-sides {
+    padding-left: 0;
+    padding-right: 0; }
 
 .csn-l {
   padding: 20px; }
+  .csn-l.no-top {
+    padding-top: 0; }
+  .csn-l.no-bot {
+    padding-bottom: 0; }
+  .csn-l.no-sides {
+    padding-left: 0;
+    padding-right: 0; }
 
 .csn-xl {
   padding: 25px; }
+  .csn-xl.no-top {
+    padding-top: 0; }
+  .csn-xl.no-bot {
+    padding-bottom: 0; }
+  .csn-xl.no-sides {
+    padding-left: 0;
+    padding-right: 0; }
 
 .csn-xxl {
   padding: 30px; }
+  .csn-xxl.no-top {
+    padding-top: 0; }
+  .csn-xxl.no-bot {
+    padding-bottom: 0; }
+  .csn-xxl.no-sides {
+    padding-left: 0;
+    padding-right: 0; }
 
 /*  _border.sass
  *
@@ -205,8 +239,8 @@
   .bordered.no-bot {
     border-bottom: 0; }
   .bordered.no-sides {
-    border-top: 0;
-    border-bottom: 0; }
+    border-left: 0;
+    border-right: 0; }
   .bordered.top-only {
     border-left: 0;
     border-right: 0;
@@ -308,6 +342,46 @@
     box-flex: 1;
     text-align: center; }
 
+/*  _media_fallback.sass
+ *
+ *  This file contains fallback styling for the 'media' component. For non-flexbox browsers, table-cell display will be
+ *  used. For browsers which don't support table-cell (IE6, IE7), inline-block will be used. 
+ *
+ *  NOTE: This fallback module relies on browser feature detection provided by head.js or modernizr.js
+ *
+ *  http://headjs.com/
+ *  http://www.modernizr.com/
+ *  
+ *  @project Truss
+ *  @author Carlos Ramirez III, Ryan Jafari
+ *  @copyright 2011
+ */
+.no-flexbox .media {
+  display: table; }
+  .no-flexbox .media > .left, .no-flexbox .media > .right {
+    display: table-cell;
+    vertical-align: middle; }
+    .no-flexbox .media > .left img, .no-flexbox .media > .right img {
+      vertical-align: middle; }
+  .no-flexbox .media > .left {
+    padding-right: 5px; }
+  .no-flexbox .media > .right {
+    padding-left: 5px;
+    text-align: right; }
+.no-flexbox.lt-ie8 .media > .left, .no-flexbox.lt-ie8 .media > .right {
+  zoom: 1;
+  *display: inline; }
+
+.no-flexbox .media.top > .left, .no-flexbox .media.top > .right {
+  vertical-align: top; }
+  .no-flexbox .media.top > .left img, .no-flexbox .media.top > .right img {
+    vertical-align: top; }
+
+.no-flexbox .media.bottom > .left, .no-flexbox .media.bottom > .right {
+  vertical-align: bottom; }
+  .no-flexbox .media.bottom > .left img, .no-flexbox .media.bottom > .right img {
+    vertical-align: bottom; }
+
 /*
  *  This module was borrowed from the amazing 'Bourbon' gem by Thoughtbot
  *  https://github.com/thoughtbot/bourbon
@@ -340,3 +414,28 @@ ul.horizontal {
     margin-left: 5px; }
   ul.horizontal > li:not(:last-child) {
     margin-right: 5px; }
+
+/*  _list_fallback.sass
+ *
+ *  This file contains fallback styling for the 'list' module. For non-flexbox browsers, floating will
+ *  be used.
+ *
+ *  NOTE: This fallback module relies on browser feature detection provided by head.js or modernizr.js
+ *
+ *  http://headjs.com/
+ *  http://www.modernizr.com/
+ *  
+ *  @project Truss
+ *  @author Carlos Ramirez III, Ryan Jafari
+ *  @copyright 2011
+ */
+ *
+ * ul.horizontal
+ *  .no-flexbox &
+ *    overflow: auto
+ *    .media
+ *      display: block
+ *    li
+ *      float: left
+ *      a
+ *        float: left */
