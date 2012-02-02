@@ -1,0 +1,48 @@
+/*
+ *  _media_fallback.sass
+ *
+ *  This file contains fallback styling for the 'media' component. For non-flexbox browsers, table-cell display will be
+ *  used. For browsers which don't support table-cell (IE6, IE7), inline-block will be used. 
+ *
+ *  NOTE: This fallback module relies on browser feature detection provided by head.js or modernizr.js
+ *
+ *  http://headjs.com/
+ *  http://www.modernizr.com/
+ *  
+ *  @project Truss
+ *  @author Carlos Ramirez III, Ryan Jafari
+ *  @copyright 2011
+ */
+
+.media
+  .no-flexbox &
+    display: table
+    & > .left, & > .right
+      display: table-cell
+      vertical-align: middle
+      img
+        vertical-align: middle
+    & > .left
+      padding-right: $default-spacing
+    & > .right
+      padding-left: $default-spacing
+      text-align: right
+  .no-flexbox.lt-ie8 &
+    // NOTE: IE6, IE7 require inline-block
+    & > .left, & > .right
+      zoom: 1
+      *display: inline
+
+.media.top
+  .no-flexbox &
+    & > .left, & > .right
+      vertical-align: top
+      img
+        vertical-align: top
+
+.media.bottom
+  .no-flexbox &
+    & > .left, & > .right
+      vertical-align: bottom
+      img
+        vertical-align: bottom
