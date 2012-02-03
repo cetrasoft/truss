@@ -3,6 +3,9 @@
 		1.1.1 Extra-extra small
 		1.1.2 Extra-small
 		...
+	1.2 Styles
+		1.2.1 Bold
+		1.2.2 Italic
 2. Layout
 	1.1 Grid
 		1.1.1 dp25

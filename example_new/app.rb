@@ -12,6 +12,7 @@ end
 
 get '/font' do
   @sizes = [['1.1.1', 'f-xxs'], ['1.1.2', 'f-xs'], ['1.1.3', 'f-s'], ['1.1.4', 'f-m'], ['1.1.5', 'f-l'], ['1.1.6', 'f-xl'], ['1.1.7', 'f-xxl']]
+  @styles = [['1.2.1', 'f-b'], ['1.2.2', 'f-i'], ['1.2.3', 'f-u']]
   @styleguide = Kss::Parser.new('public/stylesheets')
   erb :font
 end

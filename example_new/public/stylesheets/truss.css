@@ -1,6 +1,6 @@
 /*  _font.sass
  *
- *  This module contains classes for setting font sizes for text.
+ *  This module contains classes for setting font sizes and styles for text.
  *
  *  @project Truss
  *  @author Carlos Ramirez III, Ryan Jafari
@@ -14,47 +14,68 @@
 .f-xxs {
   font-size: xx-small; }
 
-/*  Sets font-size to ~ 10px by default
+/*  Sets font size to ~ 10px by default
  *
  *  Styleguide 1.1.2
  */
 .f-xs {
   font-size: x-small; }
 
-/*  Sets font-size to ~ 13px by default
+/*  Sets font size to ~ 13px by default
  *
  *  Styleguide 1.1.3
  */
 .f-s {
   font-size: small; }
 
-/*  Sets font-size to ~ 16px by default
+/*  Sets font size to ~ 16px by default
  *
  *  Styleguide 1.1.4
  */
 .f-m {
   font-size: medium; }
 
-/*  Sets font-size to ~ 18px by default
+/*  Sets font size to ~ 18px by default
  *
  *  Styleguide 1.1.5
  */
 .f-l {
   font-size: large; }
 
-/*  Sets font-size to ~ 24px by default
+/*  Sets font size to ~ 24px by default
  *
  *  Styleguide 1.1.6
  */
 .f-xl {
   font-size: large; }
 
-/*  Sets font-size to ~ 32px by default
+/*  Sets font size to ~ 32px by default
  *
  *  Styleguide 1.1.7
  */
 .f-xxl {
   font-size: xx-large; }
+
+/*  Bolds the text
+ *
+ *  Styleguide 1.2.1
+ */
+.f-b {
+  font-weight: bold; }
+
+/*  Italicizes the text
+ *
+ *  Styleguide 1.2.2
+ */
+.f-i {
+  font-style: italic; }
+
+/*  Underlines the text
+ *
+ *  Styleguide 1.2.3
+ */
+.f-u {
+  text-decoration: underline; }
 
 /*
  *  This module was borrowed from the amazing 'Bourbon' gem by Thoughtbot
