@@ -1,72 +1,75 @@
 /*  
  *  _font.sass
  *
- *  This module contains classes for setting font sizes for text and headers. The
- *  header classes are used so that a header element does not need to be restricted
- *  to a default font-size, especially since those defaults are usually reset. 
+ *  This module contains classes for setting font sizes for text.
  *
  *  @project Truss
  *  @author Carlos Ramirez III, Ryan Jafari
  *  @copyright 2011
  */
 
-/* Sometimes you want to set a different font-weight for bold text */
-$bold: bold !default
+/*  Configuration */
+$font-weight-bold: bold !default
+$font-size-xxs: xx-small !default
+$font-size-xs: x-small !default
+$font-size-s: small !default
+$font-size-m: medium !default
+$font-size-l: large !default
+$font-size-xl: x-large !default
+$font-size-xxl: xx-large !default
 
 /*
- *  Fonts
+ *  Sets font-size to ~ 9px by default
  *
- *  xx-sm  9x
- *  x-sm   10px
- *  sm     13px
- *  med    16px
- *  lg     18px
- *  x-lg   24px
- *  xx-lg  32px
+ *  Styleguide 1.1.1
  */
+.f-xxs
+  font-size: $font-size-xxs
 
-.xx-sm
-  font-size: xx-small
-  
-.x-sm
-  font-size: x-small
-  
-.sm
-  font-size: small
-  
-.med
-  font-size: medium
-  
-.lg
-  font-size: large
-  
-.x-lg
-  font-size: x-large
-  
-.xx-lg
-  font-size: xx-large
-  
 /*
- *  Headers
+ *  Sets font-size to ~ 10px by default
+ *
+ *  Styleguide 1.1.2
  */
-  
-.h1, .h2, .h3, .h4, .h5, .h6
-  font-weight: $bold
-  
-.h1
-  @extend .xx-lg
+.f-xs
+  font-size: $font-size-xs
 
-.h2
-  @extend .x-lg
+/*
+ *  Sets font-size to ~ 13px by default
+ *
+ *  Styleguide 1.1.3
+ */
+.f-s
+  font-size: $font-size-s
 
-.h3
-  @extend .lg
+/*
+ *  Sets font-size to ~ 16px by default
+ *
+ *  Styleguide 1.1.4
+ */
+.f-m
+  font-size: $font-size-m
 
-.h4
-  @extend .med
+/*
+ *  Sets font-size to ~ 18px by default
+ *
+ *  Styleguide 1.1.5
+ */
+.f-l
+  font-size: $font-size-l
 
-.h5
-  @extend .sm
+/*
+ *  Sets font-size to ~ 24px by default
+ *
+ *  Styleguide 1.1.6
+ */
+.f-xl
+  font-size: $font-size-l
 
-.h6
-  @extend .x-sm
+/*
+ *  Sets font-size to ~ 32px by default
+ *
+ *  Styleguide 1.1.7
+ */
+.f-xxl
+  font-size: $font-size-xxl

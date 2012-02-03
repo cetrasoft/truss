@@ -1,3 +1,61 @@
+/*  _font.sass
+ *
+ *  This module contains classes for setting font sizes for text.
+ *
+ *  @project Truss
+ *  @author Carlos Ramirez III, Ryan Jafari
+ *  @copyright 2011
+ */
+/*  Configuration */
+/*  Sets font-size to ~ 9px by default
+ *
+ *  Styleguide 1.1.1
+ */
+.f-xxs {
+  font-size: xx-small; }
+
+/*  Sets font-size to ~ 10px by default
+ *
+ *  Styleguide 1.1.2
+ */
+.f-xs {
+  font-size: x-small; }
+
+/*  Sets font-size to ~ 13px by default
+ *
+ *  Styleguide 1.1.3
+ */
+.f-s {
+  font-size: small; }
+
+/*  Sets font-size to ~ 16px by default
+ *
+ *  Styleguide 1.1.4
+ */
+.f-m {
+  font-size: medium; }
+
+/*  Sets font-size to ~ 18px by default
+ *
+ *  Styleguide 1.1.5
+ */
+.f-l {
+  font-size: large; }
+
+/*  Sets font-size to ~ 24px by default
+ *
+ *  Styleguide 1.1.6
+ */
+.f-xl {
+  font-size: large; }
+
+/*  Sets font-size to ~ 32px by default
+ *
+ *  Styleguide 1.1.7
+ */
+.f-xxl {
+  font-size: xx-large; }
+
 /*
  *  This module was borrowed from the amazing 'Bourbon' gem by Thoughtbot
  *  https://github.com/thoughtbot/bourbon
@@ -25,7 +83,7 @@
  *  .gap      - Elements are anchored to each side of the container.
  *  .dual     - Elements are anchored to each side of the container with a third element centered in the space between.
  *
- *  Styleguide 1.0
+ *  
  */
 .media {
   display: -webkit-box;
