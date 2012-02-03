@@ -18,6 +18,14 @@ $media-spacing: 5px !default
 /*
  *  The media element uses Flexbox display by default. The elements will flow horizontally and are
  *  vertically aligned to the center by default.
+ *
+ *  .top      - Elements are vertically aligned to the top.
+ *  .bottom   - Elements are vertically aligned to the bottom.
+ *  .baseline - Elements are vertically aligned to the baseline.
+ *  .gap      - Elements are anchored to each side of the container.
+ *  .dual     - Elements are anchored to each side of the container with a third element centered in the space between.
+ *
+ *  Styleguide 1.0
  */
 .media
   +display-box
@@ -32,21 +40,15 @@ $media-spacing: 5px !default
     & > img
       vertical-align: middle
 
-/* This media element is vertically aligned to the top */
 .media.top
   +box-align(start)
   
-/* This media element is vertically aligned to the bottom */
 .media.bottom
   +box-align(end)
   
-/* This media element is vertically aligned to the baseline */
 .media.baseline
   +box-align(baseline)
-  
-/*
- *  The 'gap' media element floats the left and right elements to either side of the container.
- */
+
 .media.gap
   // NOTE: firefox flex-box doesn't work without this!
   width: 100%
@@ -56,11 +58,7 @@ $media-spacing: 5px !default
     // If the right-aligned element isn't text (e.g.: another media, a list, etc.), then you must wrap it
     & > .wrap
       float: right
-
-/*
- *  The 'dual' media element floats the left and right elements to either side of the container in addition
- *  to having an element which appears centered in the space between.
- */
+      
 .media.dual
   // NOTE: firefox flex-box doesn't work without this!
   // NOTE 2: in order to get the media to respect parent's padding, we need

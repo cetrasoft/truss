@@ -5,7 +5,7 @@ get '/' do
   erb :index
 end
 
-get '/styleguide' do
+get '/media' do
   @styleguide = Kss::Parser.new('public/stylesheets')
   erb :styleguide
 end
