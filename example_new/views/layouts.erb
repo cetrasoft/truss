@@ -10,18 +10,14 @@
 
 <h2>2.2 - Shift</h2>
 <hr/>
-<% @down_shifts.each do |shift| %>
-  <% styleguide_block shift.first do %>
-    <div style="background: lightgray; color: white">
-      <div style="background: darkgray;">Top Element</div>
-      <div class="<%= shift.last%>" style="background: gray;">Shifted Element</div>
-    </div>
-  <% end %>
+<% styleguide_block '3.1.1' do %>
+  <div style="background: lightgray; color: white">
+    <div style="background: darkgray;">Top Element</div>
+    <div class="l-dwn-new $modifier_class" style="background: gray;">Shifted Element</div>
+  </div>
 <% end %>
-<% @right_shifts.each do |shift| %>
-  <% styleguide_block shift.first do %>
-    <div style="background: lightgray; color: white">
-      <div class="<%= shift.last%>" style="background: gray;">Shifted Element</div>
-    </div>
-  <% end %>
+<% styleguide_block '3.1.2' do %>
+  <div style="background: lightgray; color: white">
+    <div class="l-rgt-new $modifier_class" style="background: gray;">Shifted Element</div>
+  </div>
 <% end %>
