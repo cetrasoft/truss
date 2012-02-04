@@ -13,8 +13,6 @@
  *  @copyright 2011
  */
 
-.dp-base { float: left; }
-
 .dp20,
 .dp25,
 .dp33,
@@ -24,7 +22,7 @@
 .dp66,
 .dp75,
 .dp80,
-.dp100 { @extend .dp-base; }
+.dp100 { float: left; }
 
 .dp20 { width: 20%; }
 .dp25 { width: 25%; }

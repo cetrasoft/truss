@@ -25,6 +25,11 @@ get '/layout' do
   erb :layouts
 end
 
+get '/list' do
+  @styleguide = Kss::Parser.new('public/stylesheets')
+  erb :list
+end
+
 helpers do
   # Generates a styleguide block. A little bit evil with @_out_buf, but
   # if you're using something like Rails, you can write a much cleaner helper
