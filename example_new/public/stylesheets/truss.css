@@ -77,6 +77,112 @@
 .f-u {
   text-decoration: underline; }
 
+/*  
+ *  _shift.scss
+ *
+ *  This module contains a set of classes which provide spacing between elements.
+ *
+ *  @project Truss
+ *  @author Carlos Ramirez III, Ryan Jafari
+ *  @copyright 2011
+ */
+/* Configuration */
+/*
+ *	Adds a top margin to shift an element down by an 'extra-small' amount	
+ *
+ *	Styleguide 2.1.1
+ */
+.l-dwn-xs {
+  margin-top: 5px; }
+
+/*
+ *	Adds a top margin to shift an element down by an 'small' amount	
+ *
+ *	Styleguide 2.1.2
+ */
+.l-dwn-s {
+  margin-top: 10px; }
+
+/*
+ *	Adds a top margin to shift an element down by an 'medium' amount	
+ *
+ *	Styleguide 2.1.3
+ */
+.l-dwn-m {
+  margin-top: 15px; }
+
+/*
+ *	Adds a top margin to shift an element down by an 'large' amount	
+ *
+ *	Styleguide 2.1.4
+ */
+.l-dwn-l {
+  margin-top: 20px; }
+
+/*
+ *	Adds a top margin to shift an element down by an 'extra-large' amount	
+ *
+ *	Styleguide 2.1.5
+ */
+.l-dwn-xl {
+  margin-top: 25px; }
+
+/*
+ *	Adds a top margin to shift an element down by an 'extra-extra-large' amount	
+ *
+ *	Styleguide 2.1.6
+ */
+.l-dwn-xxl {
+  margin-top: 30px; }
+
+/*
+ *	Adds a top margin to shift an element down by an 'extra-extra-large' amount	
+ *
+ *	Styleguide 2.1.7
+ */
+.l-rgt-xs {
+  margin-left: 5px; }
+
+/*
+ *	Adds a left margin to shift an element to the right by an 'extra-extra-large' amount	
+ *
+ *	Styleguide 2.1.8
+ */
+.l-rgt-s {
+  margin-left: 10px; }
+
+/*
+ *	Adds a left margin to shift an element to the right by an 'extra-extra-large' amount	
+ *
+ *	Styleguide 2.1.9
+ */
+.l-rgt-m {
+  margin-left: 15px; }
+
+/*
+ *	Adds a left margin to shift an element to the right by an 'extra-extra-large' amount	
+ *
+ *	Styleguide 2.1.10
+ */
+.l-rgt-l {
+  margin-left: 20px; }
+
+/*
+ *	Adds a left margin to shift an element to the right by an 'extra-extra-large' amount	
+ *
+ *	Styleguide 2.1.11
+ */
+.l-rgt-xl {
+  margin-left: 25px; }
+
+/*
+ *	Adds a left margin to shift an element to the right by an 'extra-extra-large' amount	
+ *
+ *	Styleguide 2.1.12
+ */
+.l-rgt-xxl {
+  margin-left: 30px; }
+
 /*
  *  This module was borrowed from the amazing 'Bourbon' gem by Thoughtbot
  *  https://github.com/thoughtbot/bourbon

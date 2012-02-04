@@ -8,16 +8,96 @@
  *  @copyright 2011
  */
 
-.shf-dwn-xs  { margin-top: 5px; }
-.shf-dwn-s   { margin-top: 10px; }
-.shf-dwn-m   { margin-top: 15px; }
-.shf-dwn-l   { margin-top: 20px; }
-.shf-dwn-xl  { margin-top: 25px; }
-.shf-dwn-xxl { margin-top: 30px; }
+/* Configuration */
+$shift-size-xs: 5px !default;
+$shift-size-s: 	10px !default;
+$shift-size-m: 	15px !default;
+$shift-size-l: 	20px !default;
+$shift-size-xl: 25px !default;
+$shift-size-xxl: 30px !default;
 
-.shf-rgt-xs  { margin-left: 5px; }
-.shf-rgt-s   { margin-left: 10px; }
-.shf-rgt-m   { margin-left: 15px; }
-.shf-rgt-l   { margin-left: 20px; }
-.shf-rgt-xl  { margin-left: 25px; }
-.shf-rgt-xxl { margin-left: 30px; }
+// NOTE: should the sizes be modifiers instead of separate classes?
+
+/*
+ *	Adds a top margin to shift an element down by an 'extra-small' amount	
+ *
+ *	Styleguide 2.1.1
+ */
+.l-dwn-xs  { margin-top: $shift-size-xs; }
+
+/*
+ *	Adds a top margin to shift an element down by an 'small' amount	
+ *
+ *	Styleguide 2.1.2
+ */
+.l-dwn-s   { margin-top: $shift-size-s; }
+
+/*
+ *	Adds a top margin to shift an element down by an 'medium' amount	
+ *
+ *	Styleguide 2.1.3
+ */
+.l-dwn-m   { margin-top: $shift-size-m; }
+
+/*
+ *	Adds a top margin to shift an element down by an 'large' amount	
+ *
+ *	Styleguide 2.1.4
+ */
+.l-dwn-l   { margin-top: $shift-size-l; }
+
+/*
+ *	Adds a top margin to shift an element down by an 'extra-large' amount	
+ *
+ *	Styleguide 2.1.5
+ */
+.l-dwn-xl  { margin-top: $shift-size-xl; }
+
+/*
+ *	Adds a top margin to shift an element down by an 'extra-extra-large' amount	
+ *
+ *	Styleguide 2.1.6
+ */
+.l-dwn-xxl { margin-top: $shift-size-xxl; }
+
+/*
+ *	Adds a top margin to shift an element down by an 'extra-extra-large' amount	
+ *
+ *	Styleguide 2.1.7
+ */
+.l-rgt-xs  { margin-left: $shift-size-xs; }
+
+/*
+ *	Adds a left margin to shift an element to the right by an 'extra-extra-large' amount	
+ *
+ *	Styleguide 2.1.8
+ */
+.l-rgt-s   { margin-left: $shift-size-s; }
+
+/*
+ *	Adds a left margin to shift an element to the right by an 'extra-extra-large' amount	
+ *
+ *	Styleguide 2.1.9
+ */
+.l-rgt-m   { margin-left: $shift-size-m; }
+
+/*
+ *	Adds a left margin to shift an element to the right by an 'extra-extra-large' amount	
+ *
+ *	Styleguide 2.1.10
+ */
+.l-rgt-l   { margin-left: $shift-size-l; }
+
+/*
+ *	Adds a left margin to shift an element to the right by an 'extra-extra-large' amount	
+ *
+ *	Styleguide 2.1.11
+ */
+.l-rgt-xl  { margin-left: $shift-size-xl; }
+
+/*
+ *	Adds a left margin to shift an element to the right by an 'extra-extra-large' amount	
+ *
+ *	Styleguide 2.1.12
+ */
+.l-rgt-xxl { margin-left: $shift-size-xxl; }

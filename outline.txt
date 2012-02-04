@@ -7,34 +7,34 @@
 		1.2.1 Bold
 		1.2.2 Italic
 2. Layout
-	1.1 Grid
-		1.1.1 dp25
-		1.1.2 dp33
+	2.1 Grid
+		2.1.1 dp25
+		2.1.2 dp33
 		...
-	1.2 Shift
-		1.1.1 Shift left small
-		1.1.2 Shift left medium
+	2.2 Shift
+		2.1.1 Shift left small
+		2.1.2 Shift left medium
 		...
 3. List
-	1.1 Horizontal
+	3.1 Horizontal
 4. Media
-	1.1 Standard
-		1.1.1 Middle
-		1.1.2 Top
-		1.1.3 Bottom
-		1.1.4 Baseline
-	1.2	Gap
-	1.3 Dual
+	4.1 Standard
+		4.1.1 Middle
+		4.1.2 Top
+		4.1.3 Bottom
+		4.1.4 Baseline
+	4.2	Gap
+	4.3 Dual
 5. Skin
-	1.1 Border
-		1.1.1 Standard
-		1.1.2 No-top
-		1.1.3 No-bot
-		1.1.4 No-sides
-		1.1.5 Top-only
-		1.1.6 Bot-only
-		1.1.7 Lft-only
-		1.1.7 Rgt-only
-	1.2 Cushion
-		1.2.1 Sizes
-		1.2.2 Modifiers?
+	5.1 Border
+		5.1.1 Standard
+		5.1.2 No-top
+		5.1.3 No-bot
+		5.1.4 No-sides
+		5.1.5 Top-only
+		5.1.6 Bot-only
+		5.1.7 Lft-only
+		5.1.7 Rgt-only
+	5.2 Cushion
+		5.2.1 Sizes
+		5.2.2 Modifiers?

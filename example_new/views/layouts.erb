@@ -1,0 +1,27 @@
+<h1>2.0 - Layout</h1>
+
+<h2>2.1 - Grid</h2>
+<hr/>
+<% @grids.each do |grid| %>
+  <% styleguide_block grid.first do %>
+    <div class="<%= grid.last%>">The quick brown fox jumps over the lazy dog</div>
+  <% end %>
+<% end %>
+
+<h2>2.2 - Shift</h2>
+<hr/>
+<% @down_shifts.each do |shift| %>
+  <% styleguide_block shift.first do %>
+    <div style="background: lightgray; color: white">
+      <div style="background: darkgray;">Top Element</div>
+      <div class="<%= shift.last%>" style="background: gray;">Shifted Element</div>
+    </div>
+  <% end %>
+<% end %>
+<% @right_shifts.each do |shift| %>
+  <% styleguide_block shift.first do %>
+    <div style="background: lightgray; color: white">
+      <div class="<%= shift.last%>" style="background: gray;">Shifted Element</div>
+    </div>
+  <% end %>
+<% end %>
