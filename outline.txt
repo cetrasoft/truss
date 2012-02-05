@@ -12,9 +12,8 @@
 		2.1.2 dp33
 		...
 	2.2 Shift
-		2.1.1 Shift left small
-		2.1.2 Shift left medium
-		...
+		2.2.1 Shift Down
+		2.2.2 Shift Right
 3. List
 	3.1 Horizontal
 4. Media
