@@ -12,7 +12,8 @@
  *  @author Carlos Ramirez III, Ryan Jafari
  *  @copyright 2011
  */
- 
+
+/* Configuration */
 $media-spacing: 5px !default
 
 /*
@@ -22,10 +23,8 @@ $media-spacing: 5px !default
  *  .top      - Elements are vertically aligned to the top.
  *  .bottom   - Elements are vertically aligned to the bottom.
  *  .baseline - Elements are vertically aligned to the baseline.
- *  .gap      - Elements are anchored to each side of the container.
- *  .dual     - Elements are anchored to each side of the container with a third element centered in the space between.
  *
- *  Styleguide 1.0
+ *  Styleguide 4.1
  */
 .media
   +display-box
@@ -49,8 +48,15 @@ $media-spacing: 5px !default
 .media.baseline
   +box-align(baseline)
 
-.media.gap
+/*
+ *  Anchors elements to each side of the container.
+ *
+ *  Styleguide 4.2
+ */
+.gap
   // NOTE: firefox flex-box doesn't work without this!
+  // NOTE 2: do we have a proper fallback for non-flexbox browsers?
+  @extend .media
   width: 100%
   & > .right
     +box-flex(1)
@@ -58,12 +64,19 @@ $media-spacing: 5px !default
     // If the right-aligned element isn't text (e.g.: another media, a list, etc.), then you must wrap it
     & > .wrap
       float: right
-      
-.media.dual
+
+/*
+ *  Anchors elements to each side of the container with a third element centered in the space between.
+ *
+ *  Styleguide 4.3
+ */  
+.dual
   // NOTE: firefox flex-box doesn't work without this!
   // NOTE 2: in order to get the media to respect parent's padding, we need
   // to set the box-sizing property
+  // NOTE 3: do we have a proper fallback for non-flexbox browsers?
   // TODO: why does .gap respect the padding, but .dual doesn't?
+  @extend .media
   width: 100%
   +box-sizing(border-box)
   & > .center

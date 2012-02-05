@@ -1,0 +1,527 @@
+/*  _font.sass
+ *
+ *  This module contains classes for setting font sizes and styles for text.
+ *
+ *  @project Truss
+ *  @author Carlos Ramirez III, Ryan Jafari
+ *  @copyright 2011
+ */
+/*  Configuration */
+/*  Sets font-size to ~ 9px by default
+ *
+ *  Styleguide 1.1.1
+ */
+.f-xxs {
+  font-size: xx-small; }
+
+/*  Sets font size to ~ 10px by default
+ *
+ *  Styleguide 1.1.2
+ */
+.f-xs {
+  font-size: x-small; }
+
+/*  Sets font size to ~ 13px by default
+ *
+ *  Styleguide 1.1.3
+ */
+.f-s {
+  font-size: small; }
+
+/*  Sets font size to ~ 16px by default
+ *
+ *  Styleguide 1.1.4
+ */
+.f-m {
+  font-size: medium; }
+
+/*  Sets font size to ~ 18px by default
+ *
+ *  Styleguide 1.1.5
+ */
+.f-l {
+  font-size: large; }
+
+/*  Sets font size to ~ 24px by default
+ *
+ *  Styleguide 1.1.6
+ */
+.f-xl {
+  font-size: large; }
+
+/*  Sets font size to ~ 32px by default
+ *
+ *  Styleguide 1.1.7
+ */
+.f-xxl {
+  font-size: xx-large; }
+
+/*  Bolds the text
+ *
+ *  Styleguide 1.2.1
+ */
+.f-b {
+  font-weight: bold; }
+
+/*  Italicizes the text
+ *
+ *  Styleguide 1.2.2
+ */
+.f-i {
+  font-style: italic; }
+
+/*  Underlines the text
+ *
+ *  Styleguide 1.2.3
+ */
+.f-u {
+  text-decoration: underline; }
+
+/*  
+ *  _grid.scss
+ *
+ *  This is the framework's 'grid' module. It uses a simple, percent-based grid system with
+ *  multiples of 1/3s, 1/4s, and 1/5s.
+ *
+ *  The user must set the main grid's fixed-width manually, e.g.:
+ *
+ *  .main { margin: 0 auto; width: 960px; }
+ *
+ *  @project Truss
+ *  @author Carlos Ramirez III, Ryan Jafari
+ *  @copyright 2011
+ */
+.dp20,
+.dp25,
+.dp33,
+.dp40,
+.dp50,
+.dp60,
+.dp66,
+.dp75,
+.dp80,
+.dp100 {
+  float: left; }
+
+/*
+ *	Creates columns of 1/5 width
+ *
+ *	Styleguide 2.1.1
+ */
+.dp20 {
+  width: 20%; }
+
+/*
+ *	Creates columns of 1/4 width
+ *
+ *	Styleguide 2.1.2
+ */
+.dp25 {
+  width: 25%; }
+
+/*
+ *	Creates columns of 1/3 width
+ *
+ *	Styleguide 2.1.3
+ */
+.dp33 {
+  width: 33.33%; }
+
+/*
+ *	Creates columns of 2/5 width
+ *
+ *	Styleguide 2.1.4
+ */
+.dp40 {
+  width: 40%; }
+
+/*
+ *	Creates columns of 1/2 width
+ *
+ *	Styleguide 2.1.5
+ */
+.dp50 {
+  width: 50%; }
+
+/*
+ *	Creates columns of 3/5 width
+ *
+ *	Styleguide 2.1.6
+ */
+.dp60 {
+  width: 60%; }
+
+/*
+ *	Creates columns of 2/3 width
+ *
+ *	Styleguide 2.1.7
+ */
+.dp66 {
+  width: 66.66%; }
+
+/*
+ *	Creates columns of 3/4 width
+ *
+ *	Styleguide 2.1.8
+ */
+.dp75 {
+  width: 75%; }
+
+/*
+ *	Creates columns of 4/5 width
+ *
+ *	Styleguide 2.1.9
+ */
+.dp80 {
+  width: 80%; }
+
+/*
+ *	Creates a column of max width
+ *
+ *	Styleguide 2.1.10
+ */
+.dp100 {
+  width: 100%; }
+
+/*  
+ *  _shift_new.scss
+ *
+ *  This module contains a set of classes which provide spacing between elements.
+ *
+ *  @project Truss
+ *  @author Carlos Ramirez III, Ryan Jafari
+ *  @copyright 2011
+ */
+/* Configuration */
+/*
+ *  Adds a top margin to shift an element down. Default size is 'medium'
+ *
+ *  .xs - Moves the element an 'extra small' amount of space
+ *  .s - Moves the element a 'small' amount of space
+ *  .m - Moves the element a 'medium' amount of space
+ *  .l - Moves the element a 'large' amount of space
+ *  .xl - Moves the element an 'extra large' amount of space
+ *  .xxl - Moves the element an 'extra-extra large' amount of space
+ *
+ *  Styleguide 2.2.1
+ */
+.l-dwn-new {
+  margin-top: 15px; }
+  .l-dwn-new.xs {
+    margin-top: 5px; }
+  .l-dwn-new.s {
+    margin-top: 10px; }
+  .l-dwn-new.m {
+    margin-top: 15px; }
+  .l-dwn-new.l {
+    margin-top: 20px; }
+  .l-dwn-new.xl {
+    margin-top: 25px; }
+  .l-dwn-new.xxl {
+    margin-top: 30px; }
+
+/*
+ *  Adds a left margin to shift an element to the right. Default size is 'medium'
+ *
+ *  .xs - Moves the element an 'extra small' amount of space
+ *  .s - Moves the element a 'small' amount of space
+ *  .m - Moves the element a 'medium' amount of space
+ *  .l - Moves the element a 'large' amount of space
+ *  .xl - Moves the element an 'extra large' amount of space
+ *  .xxl - Moves the element an 'extra-extra large' amount of space
+ *
+ *  Styleguide 2.2.2
+ */
+.l-rgt-new {
+  margin-left: 15px; }
+  .l-rgt-new.xs {
+    margin-left: 5px; }
+  .l-rgt-new.s {
+    margin-left: 10px; }
+  .l-rgt-new.m {
+    margin-left: 15px; }
+  .l-rgt-new.l {
+    margin-left: 20px; }
+  .l-rgt-new.xl {
+    margin-left: 25px; }
+  .l-rgt-new.xxl {
+    margin-left: 30px; }
+
+/*  
+ *  _cushion.scss
+ *
+ *  This module contains a set of classes which provide spacing within an element. These classes should
+ *  be used as base classes from which to inherit when constructing new skins, e.g.:
+ *
+ *  .call-out { @extend .csn-m; background: light-blue; ... etc. }
+ *
+ *  Each cushion class has modifier classes available to optionally remove specific paddings.
+ *
+ *  @project Truss
+ *  @author Carlos Ramirez III, Ryan Jafari
+ *  @copyright 2011
+ */
+/* Configuration */
+/*
+ *  Adds padding to an element. Default size is 'medium'.
+ *
+ *  .xs - Adds an 'extra small' amount of padding
+ *  .s - Adds a 'small' amount of padding
+ *  .m - Adds a 'medium' amount of padding
+ *  .l - Adds a 'large' amount of padding
+ *  .xl - Adds an 'extra large' amount of padding
+ *  .xxl - Adds an 'extra-extra large' amount of padding
+ *  .no-top - Removes the top padding
+ *  .no-bot - Removes the bottom padding
+ *  .no-sides - Removes the left and right padding
+ *
+ *  Styleguide 5.2.1
+ */
+.s-pad {
+  padding: 15px; }
+  .s-pad.xs {
+    padding: 5px; }
+  .s-pad.s {
+    padding: 10px; }
+  .s-pad.m {
+    padding: 15px; }
+  .s-pad.l {
+    padding: 20px; }
+  .s-pad.xl {
+    padding: 25px; }
+  .s-pad.xxl {
+    padding: 30px; }
+  .s-pad.no-top {
+    padding-top: 0; }
+  .s-pad.no-bot {
+    padding-bottom: 0; }
+  .s-pad.no-sides {
+    padding-left: 0;
+    padding-right: 0; }
+
+/*  _border.sass
+ *
+ *  This module facilitates adding borders around an element. Modifiers allow control over which
+ *  sides of the border are visible. It is the responsibility of consumer to specify the color of
+ *  the border, e.g.:
+ *
+ *  .error-box { @extend .bordered; border-color: red; }
+ *
+ *  @project Truss
+ *  @author Carlos Ramirez III, Ryan Jafari
+ *  @copyright 2011
+ */
+/*  Adds a solid border around an element. Border-color must be specified separately. 
+ *
+ *  .no-top - No border will be on the top
+ *  .no-bot - No border will be on the bottom
+ *  .no-sides - No border will be on the left or right
+ *  .top-only - Border will only be on the top
+ *  .bot-only - Border will only be on the bottom
+ *  .lft-only - Border will only be on the left
+ *  .rgt-only - Border will only be on the right
+ *
+ *  Styleguide 5.1.1
+ */
+.s-bordered {
+  border: 1px solid; }
+  .s-bordered.no-top {
+    border-top: 0; }
+  .s-bordered.no-bot {
+    border-bottom: 0; }
+  .s-bordered.no-sides {
+    border-left: 0;
+    border-right: 0; }
+  .s-bordered.top-only {
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0; }
+  .s-bordered.bot-only {
+    border-left: 0;
+    border-top: 0;
+    border-right: 0; }
+  .s-bordered.lft-only {
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 0; }
+  .s-bordered.rgt-only {
+    border-left: 0;
+    border-top: 0;
+    border-bottom: 0; }
+
+/*  _media.sass
+ *
+ *  This module houses the 'media' component. A media object consists of some element (image, icon, text, link, etc.)
+ *  adjacent to another element. A vertical alignment between the two elements can be easily specified and additional
+ *  elements based on the media object can be used to create horizontal spacing between elements.
+ *
+ *  @project Truss
+ *  @author Carlos Ramirez III, Ryan Jafari
+ *  @copyright 2011
+ */
+/* Configuration */
+/*  The media element uses Flexbox display by default. The elements will flow horizontally and are
+ *  vertically aligned to the center by default.
+ *
+ *  .top      - Elements are vertically aligned to the top.
+ *  .bottom   - Elements are vertically aligned to the bottom.
+ *  .baseline - Elements are vertically aligned to the baseline.
+ *
+ *  Styleguide 4.1
+ */
+.media, .gap, .dual {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center; }
+  .media > .left, .gap > .left, .dual > .left {
+    margin-right: 5px; }
+  .media > .right, .gap > .right, .dual > .right {
+    margin-left: 5px; }
+    .media > .right > img, .gap > .right > img, .dual > .right > img {
+      vertical-align: middle; }
+
+.media.top, .top.gap, .top.dual {
+  -webkit-box-align: start;
+  -moz-box-align: start;
+  box-align: start; }
+
+.media.bottom, .bottom.gap, .bottom.dual {
+  -webkit-box-align: end;
+  -moz-box-align: end;
+  box-align: end; }
+
+.media.baseline, .baseline.gap, .baseline.dual {
+  -webkit-box-align: baseline;
+  -moz-box-align: baseline;
+  box-align: baseline; }
+
+/*  Anchors elements to each side of the container.
+ *
+ *  Styleguide 4.2
+ */
+.gap {
+  width: 100%; }
+  .gap > .right {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    box-flex: 1;
+    text-align: right; }
+    .gap > .right > .wrap {
+      float: right; }
+
+/*  Anchors elements to each side of the container with a third element centered in the space between.
+ *
+ *  Styleguide 4.3
+ */
+.dual {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box; }
+  .dual > .center {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    box-flex: 1;
+    text-align: center; }
+
+/*  _media_fallback.sass
+ *
+ *  This file contains fallback styling for the 'media' component. For non-flexbox browsers, table-cell display will be
+ *  used. For browsers which don't support table-cell (IE6, IE7), inline-block will be used. 
+ *
+ *  NOTE: This fallback module relies on browser feature detection provided by head.js or modernizr.js
+ *
+ *  http://headjs.com/
+ *  http://www.modernizr.com/
+ *  
+ *  @project Truss
+ *  @author Carlos Ramirez III, Ryan Jafari
+ *  @copyright 2011
+ */
+.no-flexbox .media, .no-flexbox .gap, .no-flexbox .dual {
+  display: table; }
+  .no-flexbox .media > .left, .no-flexbox .gap > .left, .no-flexbox .dual > .left, .no-flexbox .media > .right, .no-flexbox .gap > .right, .no-flexbox .dual > .right {
+    display: table-cell;
+    vertical-align: middle; }
+    .no-flexbox .media > .left img, .no-flexbox .gap > .left img, .no-flexbox .dual > .left img, .no-flexbox .media > .right img, .no-flexbox .gap > .right img, .no-flexbox .dual > .right img {
+      vertical-align: middle; }
+  .no-flexbox .media > .left, .no-flexbox .gap > .left, .no-flexbox .dual > .left {
+    padding-right: 5px; }
+  .no-flexbox .media > .right, .no-flexbox .gap > .right, .no-flexbox .dual > .right {
+    padding-left: 5px;
+    text-align: right; }
+.no-flexbox.lt-ie8 .media > .left, .no-flexbox.lt-ie8 .gap > .left, .no-flexbox.lt-ie8 .dual > .left, .no-flexbox.lt-ie8 .media > .right, .no-flexbox.lt-ie8 .gap > .right, .no-flexbox.lt-ie8 .dual > .right {
+  zoom: 1;
+  *display: inline; }
+
+.no-flexbox .media.top > .left, .no-flexbox .top.gap > .left, .no-flexbox .top.dual > .left, .no-flexbox .media.top > .right, .no-flexbox .top.gap > .right, .no-flexbox .top.dual > .right {
+  vertical-align: top; }
+  .no-flexbox .media.top > .left img, .no-flexbox .top.gap > .left img, .no-flexbox .top.dual > .left img, .no-flexbox .media.top > .right img, .no-flexbox .top.gap > .right img, .no-flexbox .top.dual > .right img {
+    vertical-align: top; }
+
+.no-flexbox .media.bottom > .left, .no-flexbox .bottom.gap > .left, .no-flexbox .bottom.dual > .left, .no-flexbox .media.bottom > .right, .no-flexbox .bottom.gap > .right, .no-flexbox .bottom.dual > .right {
+  vertical-align: bottom; }
+  .no-flexbox .media.bottom > .left img, .no-flexbox .bottom.gap > .left img, .no-flexbox .bottom.dual > .left img, .no-flexbox .media.bottom > .right img, .no-flexbox .bottom.gap > .right img, .no-flexbox .bottom.dual > .right img {
+    vertical-align: bottom; }
+
+/*  _list.sass
+ *
+ *  This module is used for creating lists.
+ *
+ *  @project Truss
+ *  @author Carlos Ramirez III, Ryan Jafari
+ *  @copyright 2011
+ */
+/*  This is a basic list of horizontal items. Flexbox layout is used to arrange the items
+ *  horizontally and vertically align them to the center.
+ *
+ *  Styleguide 3.1
+ */
+ul.horizontal {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center; }
+  ul.horizontal > li:not(:first-child) {
+    margin-left: 5px; }
+  ul.horizontal > li:not(:last-child) {
+    margin-right: 5px; }
+
+/*  _list_fallback.sass
+ *
+ *  This file contains fallback styling for the 'list' module. For non-flexbox browsers, floating will
+ *  be used.
+ *
+ *  NOTE: This fallback module relies on browser feature detection provided by head.js or modernizr.js
+ *
+ *  http://headjs.com/
+ *  http://www.modernizr.com/
+ *  
+ *  @project Truss
+ *  @author Carlos Ramirez III, Ryan Jafari
+ *  @copyright 2011
+ */
+.no-flexbox ul.horizontal {
+  overflow: auto; }
+  .no-flexbox ul.horizontal .media, .no-flexbox ul.horizontal .gap, .no-flexbox ul.horizontal .dual {
+    display: block; }
+  .no-flexbox ul.horizontal li {
+    float: left; }
+    .no-flexbox ul.horizontal li a {
+      float: left; }

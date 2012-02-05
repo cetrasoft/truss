@@ -1,0 +1,17 @@
+<h1>1.0 - Font</h1>
+
+<h2>1.1 - Sizes</h2>
+<hr/>
+<% @sizes.each do |size| %>
+  <% styleguide_block size.first do %>
+    <div class="<%= size.last%>">The quick brown fox jumps over the lazy dog</div>
+  <% end %>
+<% end %>
+
+<h2>1.2 - Styles</h2>
+<hr/>
+<% @styles.each do |style| %>
+  <% styleguide_block style.first do %>
+    <div class="<%= style.last%>">The quick brown fox jumps over the lazy dog</div>
+  <% end %>
+<% end %>
