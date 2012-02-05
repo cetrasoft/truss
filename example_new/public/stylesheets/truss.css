@@ -243,14 +243,6 @@
     border-top: 0;
     border-bottom: 0; }
 
-/*
- *  This module was borrowed from the amazing 'Bourbon' gem by Thoughtbot
- *  https://github.com/thoughtbot/bourbon
- */
-/*
- *  This module was borrowed from the amazing 'Bourbon' gem by Thoughtbot
- *  https://github.com/thoughtbot/bourbon
- */
 /*  _media.sass
  *
  *  This module houses the 'media' component. A media object consists of some element (image, icon, text, link, etc.)
@@ -261,18 +253,17 @@
  *  @author Carlos Ramirez III, Ryan Jafari
  *  @copyright 2011
  */
+/* Configuration */
 /*  The media element uses Flexbox display by default. The elements will flow horizontally and are
  *  vertically aligned to the center by default.
  *
  *  .top      - Elements are vertically aligned to the top.
  *  .bottom   - Elements are vertically aligned to the bottom.
  *  .baseline - Elements are vertically aligned to the baseline.
- *  .gap      - Elements are anchored to each side of the container.
- *  .dual     - Elements are anchored to each side of the container with a third element centered in the space between.
  *
- *  
+ *  Styleguide 4.1
  */
-.media {
+.media, .gap, .dual {
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -282,55 +273,99 @@
   -webkit-box-align: center;
   -moz-box-align: center;
   box-align: center; }
-  .media > .left {
+  .media > .left, .gap > .left, .dual > .left {
     margin-right: 5px; }
-  .media > .right {
+  .media > .right, .gap > .right, .dual > .right {
     margin-left: 5px; }
-    .media > .right > img {
+    .media > .right > img, .gap > .right > img, .dual > .right > img {
       vertical-align: middle; }
 
-.media.top {
+.media.top, .top.gap, .top.dual {
   -webkit-box-align: start;
   -moz-box-align: start;
   box-align: start; }
 
-.media.bottom {
+.media.bottom, .bottom.gap, .bottom.dual {
   -webkit-box-align: end;
   -moz-box-align: end;
   box-align: end; }
 
-.media.baseline {
+.media.baseline, .baseline.gap, .baseline.dual {
   -webkit-box-align: baseline;
   -moz-box-align: baseline;
   box-align: baseline; }
 
-.media.gap {
+/*  Anchors elements to each side of the container.
+ *
+ *  Styleguide 4.2
+ */
+.gap {
   width: 100%; }
-  .media.gap > .right {
+  .gap > .right {
     -webkit-box-flex: 1;
     -moz-box-flex: 1;
     box-flex: 1;
     text-align: right; }
-    .media.gap > .right > .wrap {
+    .gap > .right > .wrap {
       float: right; }
 
-.media.dual {
+/*  Anchors elements to each side of the container with a third element centered in the space between.
+ *
+ *  Styleguide 4.3
+ */
+.dual {
   width: 100%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box; }
-  .media.dual > .center {
+  .dual > .center {
     -webkit-box-flex: 1;
     -moz-box-flex: 1;
     box-flex: 1;
     text-align: center; }
 
-/*
- *  This module was borrowed from the amazing 'Bourbon' gem by Thoughtbot
- *  https://github.com/thoughtbot/bourbon
+/*  _media_fallback.sass
+ *
+ *  This file contains fallback styling for the 'media' component. For non-flexbox browsers, table-cell display will be
+ *  used. For browsers which don't support table-cell (IE6, IE7), inline-block will be used. 
+ *
+ *  NOTE: This fallback module relies on browser feature detection provided by head.js or modernizr.js
+ *
+ *  http://headjs.com/
+ *  http://www.modernizr.com/
+ *  
+ *  @project Truss
+ *  @author Carlos Ramirez III, Ryan Jafari
+ *  @copyright 2011
  */
+.no-flexbox .media, .no-flexbox .gap, .no-flexbox .dual {
+  display: table; }
+  .no-flexbox .media > .left, .no-flexbox .gap > .left, .no-flexbox .dual > .left, .no-flexbox .media > .right, .no-flexbox .gap > .right, .no-flexbox .dual > .right {
+    display: table-cell;
+    vertical-align: middle; }
+    .no-flexbox .media > .left img, .no-flexbox .gap > .left img, .no-flexbox .dual > .left img, .no-flexbox .media > .right img, .no-flexbox .gap > .right img, .no-flexbox .dual > .right img {
+      vertical-align: middle; }
+  .no-flexbox .media > .left, .no-flexbox .gap > .left, .no-flexbox .dual > .left {
+    padding-right: 5px; }
+  .no-flexbox .media > .right, .no-flexbox .gap > .right, .no-flexbox .dual > .right {
+    padding-left: 5px;
+    text-align: right; }
+.no-flexbox.lt-ie8 .media > .left, .no-flexbox.lt-ie8 .gap > .left, .no-flexbox.lt-ie8 .dual > .left, .no-flexbox.lt-ie8 .media > .right, .no-flexbox.lt-ie8 .gap > .right, .no-flexbox.lt-ie8 .dual > .right {
+  zoom: 1;
+  *display: inline; }
+
+.no-flexbox .media.top > .left, .no-flexbox .top.gap > .left, .no-flexbox .top.dual > .left, .no-flexbox .media.top > .right, .no-flexbox .top.gap > .right, .no-flexbox .top.dual > .right {
+  vertical-align: top; }
+  .no-flexbox .media.top > .left img, .no-flexbox .top.gap > .left img, .no-flexbox .top.dual > .left img, .no-flexbox .media.top > .right img, .no-flexbox .top.gap > .right img, .no-flexbox .top.dual > .right img {
+    vertical-align: top; }
+
+.no-flexbox .media.bottom > .left, .no-flexbox .bottom.gap > .left, .no-flexbox .bottom.dual > .left, .no-flexbox .media.bottom > .right, .no-flexbox .bottom.gap > .right, .no-flexbox .bottom.dual > .right {
+  vertical-align: bottom; }
+  .no-flexbox .media.bottom > .left img, .no-flexbox .bottom.gap > .left img, .no-flexbox .bottom.dual > .left img, .no-flexbox .media.bottom > .right img, .no-flexbox .bottom.gap > .right img, .no-flexbox .bottom.dual > .right img {
+    vertical-align: bottom; }
+
 /*  _list.sass
  *
  *  This module is used for creating lists.
@@ -361,3 +396,26 @@ ul.horizontal {
     margin-left: 5px; }
   ul.horizontal > li:not(:last-child) {
     margin-right: 5px; }
+
+/*  _list_fallback.sass
+ *
+ *  This file contains fallback styling for the 'list' module. For non-flexbox browsers, floating will
+ *  be used.
+ *
+ *  NOTE: This fallback module relies on browser feature detection provided by head.js or modernizr.js
+ *
+ *  http://headjs.com/
+ *  http://www.modernizr.com/
+ *  
+ *  @project Truss
+ *  @author Carlos Ramirez III, Ryan Jafari
+ *  @copyright 2011
+ */
+.no-flexbox ul.horizontal {
+  overflow: auto; }
+  .no-flexbox ul.horizontal .media, .no-flexbox ul.horizontal .gap, .no-flexbox ul.horizontal .dual {
+    display: block; }
+  .no-flexbox ul.horizontal li {
+    float: left; }
+    .no-flexbox ul.horizontal li a {
+      float: left; }

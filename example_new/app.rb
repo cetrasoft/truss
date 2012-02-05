@@ -7,7 +7,7 @@ end
 
 get '/media' do
   @styleguide = Kss::Parser.new('public/stylesheets')
-  erb :styleguide
+  erb :media
 end
 
 get '/font' do
