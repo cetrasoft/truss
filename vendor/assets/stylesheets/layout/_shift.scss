@@ -28,7 +28,7 @@ $shift-size-xxl: 30px !default;
  *
  *  Styleguide 2.2.1
  */
-.l-dwn-new { 
+.l-dwn { 
   margin-top: $shift-size-m;
   &.xs { margin-top: $shift-size-xs; }
   &.s { margin-top: $shift-size-s; }
@@ -50,7 +50,7 @@ $shift-size-xxl: 30px !default;
  *
  *  Styleguide 2.2.2
  */
- .l-rgt-new { 
+ .l-rgt { 
   margin-left: $shift-size-m;
   &.xs { margin-left: $shift-size-xs; }
   &.s { margin-left: $shift-size-s; }

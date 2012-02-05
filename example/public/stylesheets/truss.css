@@ -205,19 +205,19 @@
  *
  *  Styleguide 2.2.1
  */
-.l-dwn-new {
+.l-dwn {
   margin-top: 15px; }
-  .l-dwn-new.xs {
+  .l-dwn.xs {
     margin-top: 5px; }
-  .l-dwn-new.s {
+  .l-dwn.s {
     margin-top: 10px; }
-  .l-dwn-new.m {
+  .l-dwn.m {
     margin-top: 15px; }
-  .l-dwn-new.l {
+  .l-dwn.l {
     margin-top: 20px; }
-  .l-dwn-new.xl {
+  .l-dwn.xl {
     margin-top: 25px; }
-  .l-dwn-new.xxl {
+  .l-dwn.xxl {
     margin-top: 30px; }
 
 /*
@@ -232,19 +232,19 @@
  *
  *  Styleguide 2.2.2
  */
-.l-rgt-new {
+.l-rgt {
   margin-left: 15px; }
-  .l-rgt-new.xs {
+  .l-rgt.xs {
     margin-left: 5px; }
-  .l-rgt-new.s {
+  .l-rgt.s {
     margin-left: 10px; }
-  .l-rgt-new.m {
+  .l-rgt.m {
     margin-left: 15px; }
-  .l-rgt-new.l {
+  .l-rgt.l {
     margin-left: 20px; }
-  .l-rgt-new.xl {
+  .l-rgt.xl {
     margin-left: 25px; }
-  .l-rgt-new.xxl {
+  .l-rgt.xxl {
     margin-left: 30px; }
 
 /*  
