@@ -78,6 +78,112 @@
   text-decoration: underline; }
 
 /*  
+ *  _grid.scss
+ *
+ *  This is the framework's 'grid' module. It uses a simple, percent-based grid system with
+ *  multiples of 1/3s, 1/4s, and 1/5s.
+ *
+ *  The user must set the main grid's fixed-width manually, e.g.:
+ *
+ *  .main { margin: 0 auto; width: 960px; }
+ *
+ *  @project Truss
+ *  @author Carlos Ramirez III, Ryan Jafari
+ *  @copyright 2011
+ */
+.dp20,
+.dp25,
+.dp33,
+.dp40,
+.dp50,
+.dp60,
+.dp66,
+.dp75,
+.dp80,
+.dp100 {
+  float: left; }
+
+/*
+ *	Creates columns of 1/5 width
+ *
+ *	Styleguide 2.1.1
+ */
+.dp20 {
+  width: 20%; }
+
+/*
+ *	Creates columns of 1/4 width
+ *
+ *	Styleguide 2.1.2
+ */
+.dp25 {
+  width: 25%; }
+
+/*
+ *	Creates columns of 1/3 width
+ *
+ *	Styleguide 2.1.3
+ */
+.dp33 {
+  width: 33.33%; }
+
+/*
+ *	Creates columns of 2/5 width
+ *
+ *	Styleguide 2.1.4
+ */
+.dp40 {
+  width: 40%; }
+
+/*
+ *	Creates columns of 1/2 width
+ *
+ *	Styleguide 2.1.5
+ */
+.dp50 {
+  width: 50%; }
+
+/*
+ *	Creates columns of 3/5 width
+ *
+ *	Styleguide 2.1.6
+ */
+.dp60 {
+  width: 60%; }
+
+/*
+ *	Creates columns of 2/3 width
+ *
+ *	Styleguide 2.1.7
+ */
+.dp66 {
+  width: 66.66%; }
+
+/*
+ *	Creates columns of 3/4 width
+ *
+ *	Styleguide 2.1.8
+ */
+.dp75 {
+  width: 75%; }
+
+/*
+ *	Creates columns of 4/5 width
+ *
+ *	Styleguide 2.1.9
+ */
+.dp80 {
+  width: 80%; }
+
+/*
+ *	Creates a column of max width
+ *
+ *	Styleguide 2.1.10
+ */
+.dp100 {
+  width: 100%; }
+
+/*  
  *  _shift_new.scss
  *
  *  This module contains a set of classes which provide spacing between elements.

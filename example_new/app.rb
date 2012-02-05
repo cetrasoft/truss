@@ -18,9 +18,6 @@ get '/font' do
 end
 
 get '/layout' do
-  @grids = []
-  #@down_shifts = [['2.1.1', 'l-dwn-xs'], ['2.1.2', 'l-dwn-s'], ['2.1.3', 'l-dwn-m'], ['2.1.4', 'l-dwn-l'], ['2.1.5', 'l-dwn-xl'], ['2.1.6', 'l-dwn-xxl']]
-  #@right_shifts = [['2.1.7', 'l-rgt-xs'], ['2.1.8', 'l-rgt-s'], ['2.1.9', 'l-rgt-m'], ['2.1.10', 'l-rgt-l'], ['2.1.11', 'l-rgt-xl'], ['2.1.12', 'l-rgt-xxl']]
   @styleguide = Kss::Parser.new('public/stylesheets')
   erb :layouts
 end
