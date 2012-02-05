@@ -141,6 +141,58 @@
   .l-rgt-new.xxl {
     margin-left: 30px; }
 
+/*  
+ *  _cushion.scss
+ *
+ *  This module contains a set of classes which provide spacing within an element. These classes should
+ *  be used as base classes from which to inherit when constructing new skins, e.g.:
+ *
+ *  .call-out { @extend .csn-m; background: light-blue; ... etc. }
+ *
+ *  Each cushion class has modifier classes available to optionally remove specific paddings.
+ *
+ *  @project Truss
+ *  @author Carlos Ramirez III, Ryan Jafari
+ *  @copyright 2011
+ */
+/* Configuration */
+/*
+ *  Adds padding to an element. Default size is 'medium'.
+ *
+ *  .xs - Adds an 'extra small' amount of padding
+ *  .s - Adds a 'small' amount of padding
+ *  .m - Adds a 'medium' amount of padding
+ *  .l - Adds a 'large' amount of padding
+ *  .xl - Adds an 'extra large' amount of padding
+ *  .xxl - Adds an 'extra-extra large' amount of padding
+ *  .no-top - Removes the top padding
+ *  .no-bot - Removes the bottom padding
+ *  .no-sides - Removes the left and right padding
+ *
+ *  Styleguide 5.2.1
+ */
+.s-pad {
+  padding: 15px; }
+  .s-pad.xs {
+    padding: 5px; }
+  .s-pad.s {
+    padding: 10px; }
+  .s-pad.m {
+    padding: 15px; }
+  .s-pad.l {
+    padding: 20px; }
+  .s-pad.xl {
+    padding: 25px; }
+  .s-pad.xxl {
+    padding: 30px; }
+  .s-pad.no-top {
+    padding-top: 0; }
+  .s-pad.no-bot {
+    padding-bottom: 0; }
+  .s-pad.no-sides {
+    padding-left: 0;
+    padding-right: 0; }
+
 /*
  *  This module was borrowed from the amazing 'Bourbon' gem by Thoughtbot
  *  https://github.com/thoughtbot/bourbon

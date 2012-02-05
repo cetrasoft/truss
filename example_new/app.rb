@@ -30,6 +30,11 @@ get '/list' do
   erb :list
 end
 
+get '/skin' do
+  @styleguide = Kss::Parser.new('public/stylesheets')
+  erb :skin
+end
+
 helpers do
   # Generates a styleguide block. A little bit evil with @_out_buf, but
   # if you're using something like Rails, you can write a much cleaner helper

@@ -51,6 +51,7 @@ $media-spacing: 5px !default
 
 .media.gap
   // NOTE: firefox flex-box doesn't work without this!
+  // NOTE 2: do we have a proper fallback for non-flexbox browsers?
   width: 100%
   & > .right
     +box-flex(1)
@@ -63,6 +64,7 @@ $media-spacing: 5px !default
   // NOTE: firefox flex-box doesn't work without this!
   // NOTE 2: in order to get the media to respect parent's padding, we need
   // to set the box-sizing property
+  // NOTE 3: do we have a proper fallback for non-flexbox browsers?
   // TODO: why does .gap respect the padding, but .dual doesn't?
   width: 100%
   +box-sizing(border-box)
