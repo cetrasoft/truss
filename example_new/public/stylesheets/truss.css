@@ -193,6 +193,56 @@
     padding-left: 0;
     padding-right: 0; }
 
+/*  _border.sass
+ *
+ *  This module facilitates adding borders around an element. Modifiers allow control over which
+ *  sides of the border are visible. It is the responsibility of consumer to specify the color of
+ *  the border, e.g.:
+ *
+ *  .error-box { @extend .bordered; border-color: red; }
+ *
+ *  @project Truss
+ *  @author Carlos Ramirez III, Ryan Jafari
+ *  @copyright 2011
+ */
+/*  Adds a solid border around an element. Border-color must be specified separately. 
+ *
+ *  .no-top - No border will be on the top
+ *  .no-bot - No border will be on the bottom
+ *  .no-sides - No border will be on the left or right
+ *  .top-only - Border will only be on the top
+ *  .bot-only - Border will only be on the bottom
+ *  .lft-only - Border will only be on the left
+ *  .rgt-only - Border will only be on the right
+ *
+ *  Styleguide 5.1.1
+ */
+.s-bordered {
+  border: 1px solid; }
+  .s-bordered.no-top {
+    border-top: 0; }
+  .s-bordered.no-bot {
+    border-bottom: 0; }
+  .s-bordered.no-sides {
+    border-left: 0;
+    border-right: 0; }
+  .s-bordered.top-only {
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0; }
+  .s-bordered.bot-only {
+    border-left: 0;
+    border-top: 0;
+    border-right: 0; }
+  .s-bordered.lft-only {
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 0; }
+  .s-bordered.rgt-only {
+    border-left: 0;
+    border-top: 0;
+    border-bottom: 0; }
+
 /*
  *  This module was borrowed from the amazing 'Bourbon' gem by Thoughtbot
  *  https://github.com/thoughtbot/bourbon
